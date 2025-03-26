@@ -1,4 +1,3 @@
-# @package _group_
 model_type: "MLPClassifier"
 hidden_layer_sizes : "64"
 max_iter : 600

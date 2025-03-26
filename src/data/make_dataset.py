@@ -11,7 +11,7 @@ def split_train_val_data(
         params: SplittingParams
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
-    train_data, test_data = train_test_split(
+    df_train, df_validation = train_test_split(
         data, test_size=params.val_size, random_state=params.random_state
     )
-    return train_data, test_data
+    return df_train, df_validation
