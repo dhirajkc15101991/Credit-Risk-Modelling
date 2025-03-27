@@ -1,18 +1,5 @@
-StumbleUpon Evergreen Classification Challenge
-==============================
-This project based on https://www.kaggle.com/c/stumbleupon    
-"StumbleUpon is a user-curated web content discovery engine that recommends relevant, high quality pages and media to its users, based on their interests. While some pages we recommend, such as news articles or seasonal recipes, are only relevant for a short period of time, others maintain a timeless quality and can be recommended to users long after they are discovered."
-   
-A short description of the project.
-------------
-The primary objective of this project is to establish a well-organized project structure and effectively implement diverse techniques.   
-Project structure is based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>.   
-For config handling  <a target="_blank" href="https://hydra.cc/docs/intro/">Hydra library</a>  is used .   
-Notebooks folder contains links to colab notebooks with shap value and DoWhy explorations (ToDo: clean and translate notebooks).   
-
-To be done:
-1. Translate notebooks.
-2. Improve parameters optimization
+Credit risk modelling
+=============================
 
 Project Organization
 ------------
@@ -43,15 +30,16 @@ Project Organization
     │   │    
     │   │
     │   ├── features              <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    |   |   └── custom_scaler.py  <- Custom scaler transformer
+    │   │   └── feature_encoding_with_classifier.py
+    |   |   └── feature_selection.py,
+                handling_null_value.py
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
+    │   │   ├── train_model.py
+    │   │   └── predict_model.py
     |   |
-    │   ├── outputs       <- Hydra logs
+    │   ├── outputs       <- Hydra logs ---Currently we are doing console logging only.
     │   │   
     │   ├──  utils        <- Scripts for serialized models, reading data
     │   |    └── utils.py

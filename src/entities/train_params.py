@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from typing import Dict, List, Any
 
 
 @dataclass()
@@ -12,9 +13,12 @@ class LogRegParams:
 @dataclass()
 class RandomForestParams:
     model_type: str = field(default="RandomForestClassifier")
-    n_estimators: int = field(default=50)
-    max_depth: int = field(default=5)
     random_state: int = field(default=21)
+    param_grid: Dict[str, List[Any]] = field(default_factory=lambda: {
+        "n_estimators": [50, 100, 200],
+        "max_depth": [None, 10, 20],
+        "min_samples_split": [2, 5, 10]
+    })
 
 
 @dataclass()

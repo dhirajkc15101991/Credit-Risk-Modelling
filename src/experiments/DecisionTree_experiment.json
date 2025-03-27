@@ -1,9 +1,0 @@
-{
-    "model_name": "DecisionTree",
-    "best_params": {
-        "min_samples_split": 10,
-        "max_depth": 10
-    },
-    "training_metric": 0.8065140605895939,
-    "model_path": "c:\\Users\\dhiraj_choudhary\\Music\\Credit-Risk-Modelling\\src\\experiments\\DecisionTree.pkl"
-}

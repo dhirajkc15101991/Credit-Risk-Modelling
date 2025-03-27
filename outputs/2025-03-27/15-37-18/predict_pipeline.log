@@ -1,0 +1,6 @@
+[2025-03-27 15:37:18,542][predict_pipeline][INFO] - Start prediction pipeline PredictingPipelineParams(validation_data_path='data/validation_data/cust_val_data.csv', feature_encoded_classifier_path='src/models/feature_risk_modelling_column_trans_classifier.pkl', label_encoder_classifier_path='src/models/label_encoding_risk_modelling_classifier.pkl', feature_store_path='src/models/final_features_after_feature_selection.json', model_dir_path='src/models', output_data_path='models/predictions.csv', model_type='RandomForestClassifier', experiment_dir='src/experiments')
+[2025-03-27 15:37:18,542][predict_pipeline][INFO] - Laoding validation data C:\Users\dhiraj_choudhary\Music\Credit-Risk-Modelling\data\validation_data\cust_val_data.csv started
+[2025-03-27 15:37:18,593][predict_pipeline][INFO] - Laoding validation data C:\Users\dhiraj_choudhary\Music\Credit-Risk-Modelling\data\validation_data\cust_val_data.csv completed
+[2025-03-27 15:37:18,594][predict_pipeline][INFO] - loading classifiers - preprocessing,label encoding and important features started
+[2025-03-27 15:37:18,594][predict_pipeline][INFO] - laoding classifiers - preprocessing,label encoding and important features completed
+[2025-03-27 15:37:18,594][predict_pipeline][INFO] - Validation of model RandomForestClassifier started

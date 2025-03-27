@@ -14,7 +14,8 @@ class TrainingPipelineParams:
     path_config: PathParams
     splitting_params: SplittingParams
     feature_params: FeatureParams
-    train_params: Union[LogRegParams, RandomForestParams, MLPParams]
+    train_params: RandomForestParams
+    # train_params: Union[LogRegParams, RandomForestParams, MLPParams]
 
 
 TrainingPipelineParamsSchema = class_schema(TrainingPipelineParams)

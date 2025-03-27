@@ -1,0 +1,10 @@
+{
+    "model_name": "RandomForestClassifier",
+    "best_params": {
+        "n_estimators": 50,
+        "min_samples_split": 5,
+        "max_depth": 20
+    },
+    "training_accuracy": 0.9503135122284627,
+    "model_path": "C:\\Users\\dhiraj_choudhary\\Music\\Credit-Risk-Modelling\\src\\models\\model_RandomForestClassifier.pkl"
+}
